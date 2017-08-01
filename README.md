@@ -1,6 +1,6 @@
 # sistema-nutricionista
-Sistema para Nutricionistas
-Este projeto contém:
+# Sistema para Nutricionistas
+Este projeto contÃ©m:
 * Fluxograma de atendimento
 * Modelagem de dados
 
