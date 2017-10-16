@@ -71,7 +71,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Linneu Lopes** - *Full development* - [LinneuDM](https://github.com/LinneuDM)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
