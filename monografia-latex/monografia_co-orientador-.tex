@@ -220,7 +220,7 @@ nutricionista, obesidade.
 
 
 \begin{resumo}[Abstract]
-Food is very important in human life. Because of people's everyday lives, the demand for fast food has increased. This kind of food is rich in substances harmful to health, chronic non-communicable diseases. The concern with the improvement and quality of life causes people to seek more and more the nutritionist. On the other hand, the nutritionist finds a job that needs organization and accuracy. Inconsequence, he may make mistakes that compromise his work with the patient. Faced with these difficulties, there is a demand for tools that help the nutritionist's job. This work proposal consists on a simple tool and providing a good experience for the professional who uses it and consequently reduces the rate of imminent obesity.
+Food is very important in human life. Because of people's everyday lives, the demand for fast food has increased. This kind of food is rich in substances harmful to health, chronic non-communicable diseases. The concern with the improvement and quality of life causes people to seek more and more the nutritionist. On the other hand, the nutritionist finds a job that needs organization and accuracy. Inconsequence, he may make mistakes that compromise his work with the patient. Faced with these difficulties, there is a demand for tools that help the nutritionist's job. This work proposal consists of an simple tool and providing a good experience for the professional who uses it and consequently reduces the rate of imminent obesity.
 \vspace{\onelineskip}
 
 \noindent
@@ -349,6 +349,8 @@ Durante o acompanhamento do paciente, o nutricionista muitas vezes precisa
 consultar diversos autores para efetuar um trabalho com mais precisão. Esta etapa do trabalho do profissional
 torna-se bastante dificultoso sem o auxílio de uma ferramenta que faça a pesquisa e efetue os cálculos automaticamente.
 
+Para \citeonline{araujo}, antropometria ou avaliação antropométrica é um importante método para avaliação do estado nutricional de um indivíduo e possibilita a detecção de alteração do estado nutricional do mesmo ou até mesmo de coletividades. A Organização Mundial da Saúde (OMS) afirmou em 1995 que a avaliação antropométrica é uma importante ferramenta para detecção para grupos, mas que não deve ser utilizada para diagnóstico final \cite{oms}.
+
 O acompanhamento nutricional individualizado é extremamente importante para
 o paciente obter resultados relevantes de acordo com o objetivo traçado pelo
 nutricionista, visto que, cada indivíduo possui uma necessidade energética diferente
@@ -393,7 +395,7 @@ Este trabalho está organizado da seguinte maneira:
 % ---
 \chapter{Referencial Teórico}
 
-Este capítulo é destinado a discussão dos conceitos utilizados durante o desenvolvimento do projeto. \citeonline{tenorio} ressalta a importância da organização e compreensão das informações de um sistema \textit{web} por parte do usuário, atendendo às necessidades e exigências do mesmo durante o desenvolvimento do sistema.
+Este capítulo é destinado a discussão dos conceitos utilizados durante o desenvolvimento do projeto. \citeonline{tenorio} ressalta a importância da organização e compreensão das informações de um sistema \textit{Web} por parte do usuário, atendendo às necessidades e exigências do mesmo durante o desenvolvimento do sistema.
 
 % --- Seção dentro do capítulo
 \section{Servidor}
@@ -404,7 +406,7 @@ ações são tratadas como requisição. Quando o usuário faz a requisição ao
 é chamado de HTTP \textit{request}. Quando a resposta é enviada pelo servidor, esta ação
 é chamada de HTTP \textit{response}.
 
-Os sistemas \textit{web} funcionam da seguinte maneira: o usuário (cliente) faz uma
+Os sistemas \textit{Web} funcionam da seguinte maneira: o usuário (cliente) faz uma
 requisição de uma página para o servidor e retorna uma resposta para ele através do
 navegador. A resposta é interpretada pelo navegador e entregue pelo servidor para o
 usuário \cite{niederauer}.
@@ -437,7 +439,7 @@ para .NET (IronPython), JVM (Jython), entre outros.
 
 \subsection{Django}
 
-O Django é um \textit{framework} de desenvolvimento \textit{web} criado por Jacob KaplalnMoss,
+O Django é um \textit{framework} de desenvolvimento \textit{Web} criado por Jacob Kaplan Moss,
 Adrian Holovaty e Simon Willison em 2003. O Django utiliza o conceito DRY –
 \textit{Don’t Repeat yourself} (“não repita a si mesmo”), que propõe que cada parte de um
 sistema deve possuir uma representação única.
@@ -447,7 +449,7 @@ cita alguns de seus principais componentes:
 
  \begin{itemize}
 
-	\item \textbf{ORM} \textit{\textit{Object-relational mapper}} (Mapeador objeto-relacional): é
+	\item \textbf{ORM} (\textit{Object-relational mapper} - Mapeador objeto-relacional): é
 uma técnica de mapeamento objeto relacional que permite fazer uma
 relação dos objetos com os dados que estes representam.
 	\item \textbf{\textit{Template System}}: linguagem para criação de templates (HTML, XML,
@@ -457,7 +459,7 @@ Sistema de administração: Interface de administração própria do
 	\item \textbf{URL} (\textit{Uniform Resource Locator}) \textit{dispatcher}: Processador de URLs
 do sistema que executando funções específicas feitas pelo
 desenvolvedor, possibilitando URL’s amigáveis.
-	\item \textbf{Internacionalização}: Permite que o sistema seja traduzido para
+	\item \textbf{Internacionalização}: permite que o sistema seja traduzido para
 diversos idiomas.
 	\item \textbf{Formulários}: geração automática de formulários e facilitação na
 manipulação dos dados enviados por meio deles.
@@ -468,36 +470,38 @@ automatizado, entre outros.
 
 \end{itemize}
 
-O Django utiliza o padrão de projeto MTV (\textit{Model-Template-View}) para
-desenvolvimento, que possui essencialmente a mesma lógica que o MVC (\textit{Model-View-Controller}),
-muito utilizado em outras linguagens \cite{neto}.
-
-O padrão de projeto MVC divide-se em três camadas: Modelo, Visão e
+O padrão de projeto MVC (\textit{Model-View-Controller}) divide-se em três camadas: Modelo, Visão e
 Controlador. O Modelo é o responsável pela comunicação com os dados
 armazenados no banco de dados que serão visualizados na camada de Visão. A
 Visão, por sua vez, é responsável pela apresentação da aplicação. E por último, o
 controlador, responsável por administrar todo o fluxo da aplicação \cite{lemos}.
 
+O Django utiliza o padrão de projeto MTV (\textit{Model-Template-View}) para
+desenvolvimento, que possui essencialmente a mesma lógica que o MVC,
+muito utilizado em outras linguagens \cite{neto}. A diferença é apenas conceitual. A camada \textit{Template}
+executa exatamente a mesma função que a camada \textit{View} do MVC, o mesmo vale para a camada \textit{View} em
+relação a camada \textit{Controller} do MVC, com uma ressalva de que os desenvolvedores do \textit{framework} entendem
+que o controlador é a própria ferramenta \cite{django}.
 
 \subsection{Banco de Dados MySQL}
 O MySQL, criado pela empresa MySQL AB na Suécia, é um SGBD que utiliza a
 linguagem SQL como interface. A MySQL AB foi adquirida pela Sun Microsystems em
 2008, a qual posteriormente foi comprada pela Oracle, incluindo o SGBD MySQL.
-
 Atualmente, esse é um dos bancos de dados mais utilizados do mundo, com mais de
 10 milhões de instalações e um dos motivos para essa popularidade é devido a fácil
-integração a também popular linguagem PHP \cite{mottin}.
-
+integração a também popular linguagem PHP \cite{mottin}. Entre os usuários mais populares do MySQL estão: NASA, Bradesco, Dataprev, HP, Nokia, Sony, Sistemas Cisco, entre outros.
 O MySQL é o banco de dados de código aberto mais popular do mundo. Ainda
 mantido pela Oracle, tornou-se a principal escolha de banco de dados para aplicativos
-\textit{web}, usado por \textit{websites} muito conhecidos como: Facebook, Twitter, YouTube, entre
+\textit{Web}, usado por \textit{websites} muito conhecidos como: Facebook, Twitter, YouTube, entre
 outros.
+
+Dentre as características do MySQL, é possível citar: portátil (suporta qualquer plataforma), compatível (possui compatibilidade com diversas linguagens de programação), é um software livre (licença GPL), pouco exigente quanto ao hardware e é fácil de utilizar.
 
 % --- Seção dentro do capítulo
 \section{Cliente}
 % ---
 
-O lado cliente de uma aplicação \textit{web} é quem realiza a requisição e se comunica
+O lado cliente de uma aplicação \textit{Web} é quem realiza a requisição e se comunica
 com o servidor, ao tempo que recebe a resposta do mesmo. Em outras palavras, o
 lado cliente é quem estabelece a comunicação com o usuário.
 
@@ -505,56 +509,54 @@ lado cliente é quem estabelece a comunicação com o usuário.
 
 HTML é uma sigla em inglês que significa Linguagem para Marcação de
 Hipertexto (\textit{HyperText Markup Language}). Na aplicação, é usada para denotar os 
-elementos da página, tais como caixas de seleção, caixas de texto, etc. Sua função é
-definir apenas a estrutura da página \cite{folle}.A Figura 1 é um exemplo simples de uma página com código HTML, mostrando
+elementos da página, tais como caixas de seleção, caixas de texto, entre outros. Sua função é
+definir apenas a estrutura da página \cite{folle}. A Figura 1 é um exemplo simples de uma página com código HTML, mostrando
 algumas tags HTML e suas funcionalidades de marcação:
-
-\begin{figure} [hbt] 
-%% hbt SIGNIFICA QUE ELE PRIMEIRO VAI TENTAR COLOCAR A IMAGEM NESTE LUGAR (h de "here"). SENÃO DER, ELE TENTA COLOCAR MAIS PRA BAIXO (b de "bottom"). SENÃO ELE COLOCA MAIS PARA CIMA (t de "top").
-\label{figura1} 
-%% LABEL SERVE PARA VOCÊ REFERENCIAR A FIGURA NO MEIO DO TEXTO (VEJA LINHA 330: \ref{figura1}). ASSIM VOCÊ NÃO PERDE A REFERÊNCIA QUANDO MUDA A FIGURA DE LUGAR
-\caption{Exemplo de código HTML.}
-\begin{center}
-\includegraphics[width=0.75\textwidth]{exhtml.png} %% PARA COLOCAR O ARQUIVO DA IMAGEM NO SHARELATEX, CLIQUE NO ÍCONE QUE PARECE UMA FLECHINHA PARA CIMA (ATUALIZAR), CLIQUE EM UPLOAD E PROCURE A IMAGEM EM SEU COMPUTADOR.
-\end{center}
-\end{figure}
-
 \begin{itemize}
 
-	\item Tag <html> - delimita o início e o fim de uma página HTML. Tudo que
+	\item Tag <html> - delimita o início e o fim de uma página HTML. Tudo que pertence a página deve estar dentro dessa tag.
 	\item Tag <head> - contém informações de cabeçalho da página, como: título,
-	\item Tag <title> - Define o título da página.
-	\item Tag <body> - Delimita o conteúdo que estará no corpo da página.
+	\item Tag <title> - define o título da página.
+	\item Tag <body> - delimita o conteúdo que estará no corpo da página.
 
 \end{itemize}
 
+\begin{figure} [hbt] 
+%% hbt SIGNIFICA QUE ELE PRIMEIRO VAI TENTAR COLOCAR A IMAGEM NESTE LUGAR (h de "here"). SENÃO DER, ELE TENTA COLOCAR MAIS PRA BAIXO (b de "bottom"). SENÃO ELE COLOCA MAIS PARA CIMA (t de "top").
+\begin{center}
+\includegraphics[width=0.75\textwidth]{exhtml.png} %% PARA COLOCAR O ARQUIVO DA IMAGEM NO SHARELATEX, CLIQUE NO ÍCONE QUE PARECE UMA FLECHINHA PARA CIMA (ATUALIZAR), CLIQUE EM UPLOAD E PROCURE A IMAGEM EM SEU COMPUTADOR.
+\end{center}
+\label{figura1} 
+%% LABEL SERVE PARA VOCÊ REFERENCIAR A FIGURA NO MEIO DO TEXTO (VEJA LINHA 330: \ref{figura1}). ASSIM VOCÊ NÃO PERDE A REFERÊNCIA QUANDO MUDA A FIGURA DE LUGAR
+\caption{Exemplo de código HTML.}
+\end{figure}
 
 \subsection{\textit{Cascading Style Sheets} – CSS}
 
 CSS (\textit{Cascading Style Sheets}) – é uma linguagem utilizada para tratamento
-visual dos elementos da página \textit{web} \cite{folle}. Este é, portanto, a tecnologia
-responsável por tratar cada elemento da página \textit{web} visualmente, atribuindo cores e
+visual dos elementos da página \textit{Web} \cite{folle}. Este é, portanto, a tecnologia
+responsável por tratar cada elemento da página \textit{Web} visualmente, atribuindo cores e
 posições diferentes, dependendo da preferência do programador. Possui sintaxe
 simples e assim como as demais tecnologias, utiliza-se de várias palavras em inglês
 para especificar os diferentes estilos de propriedades da página.
 
 \begin{figure} [hbt] 
-\label{figura1} 
-\caption{Exemplo de código CSS.}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{excss.png}
 \end{center}
+\label{figura1} 
+\caption{Exemplo de código CSS.}
 \end{figure}
 
 \subsection{\textit{JavaScript e JQuery}}
 
 Segundo \citeonline{folle}, \textit{JavaScript} “é uma linguagem de script executada pelos
 navegadores que permite o acesso e manipulação programática de objetos de uma
-página \textit{web}”. Ela possibilita que um campo para digitar uma data seja formatado
+página \textit{Web}”. Ela possibilita que um campo para digitar uma data seja formatado
 automaticamente (com barras), ou que um campo seja desabilitado dinamicamente,
 etc. 
 
-\textit{Jquery} é portanto, uma biblioteca de funções prontas de \textit{JavaScript}, que
+\textit{JQuery} é portanto, uma biblioteca de funções prontas de \textit{JavaScript}, que
 interagem com o HTML e possibilitam uma melhor experiência ao usuário. Foi lançada
 em 2006, no BarCamp, de Nova York, por John Resig e é utilizada por milhares de
 sites visitados pelo mundo. Segundo a \citeonline{w3techs}, é a biblioteca JavaScript
@@ -587,19 +589,20 @@ as mudanças como parte natural do processo de desenvolvimento, através das
 atualizações do \textit{Product Backlog}, onde as novas solicitações do cliente podem ser
 introduzidas no próximo \textit{sprint}, gerando vantagem competitiva para as empresas.
 
-\begin{figure} [hbt] 
-\label{figura1} 
-\caption{Ciclo de Desenvolvimento Scrum \cite{vascharim}}
-\begin{center}
-\includegraphics[width=0.75\textwidth]{scrum.png}
-\end{center}
-\end{figure}
-
 A Figura 3 apresenta o ciclo de desenvolvimento \textit{Scrum}, que é dividido em
 \textit{Sprints}, que podem durar de 10 a 30 dias e no final do \textit{sprint} é mostrado ao \textit{Product
 Owner}. Durante cada \textit{sprint} são realizadas verificações do andamento do projeto. Um
 conjunto de \textit{sprints} que formam uma versão utilizada do produto é chamado de
 \textit{release}.
+\cleardoublepage
+
+\begin{figure} [hbt] 
+\begin{center}
+\includegraphics[width=1\textwidth]{scrum.png}
+\end{center}
+\label{figura1} 
+\caption{Ciclo de Desenvolvimento Scrum \cite{vascharim}}
+\end{figure}
 
 \subsection{Linguagem de Modelagem Unificada (\textit{Unified Modeling Language} – UML)}
 
@@ -633,12 +636,12 @@ altura e massa corporal total. Entre tantas equações, são utilizadas as segui
 \citeonline{harris1}, sua reformulação \citeonline{harris2} e \citeonline{cunningham} por possuírem grande
 aceitabilidade e credibilidade pelas entidades relacionadas a Nutrição \cite{weijs}.
 
-Esse cálculo torna-se indispensável durante o atendimento nutricional, visto
+A Taxa Metabólica Basal torna-se indispensável durante o atendimento nutricional, visto
 que ele é responsável pela individualização da sua dieta, de forma que possa atender
 todas as necessidades calóricas do mesmo, auxiliando na melhora do quadro
 nutricional do paciente \cite{pedrosa}.
 
-O sistema deve então focar nos dados que estas fórmulas podem apresentar
+A ferramenta criada a partir deste trabalho deve então focar nos dados que estas fórmulas podem apresentar
 como resultado, a fim de que possa facilitar o atendimento por parte do nutricionista,
 ao tempo que o paciente obtenha um resultado com maior satisfação.
 
@@ -658,28 +661,26 @@ entre os indivíduos \cite{hill}.
 \section{TACO - Tabela Brasileira de Composição de Alimentos}
 
 Reconhecida oficialmente pelo Ministério da Saúde e produzida pela Universidade de Campinas, o objetivo da TACO é gerar dados sobre a composição dos principais alimentos consumidos no Brasil, de maneira que possa assegurar a confiabilidade dos resultados \cite{taco}. 
-
 Para desenvolver o sistema, foi necessário utilizar-se de um banco de dados que dispusesse das informações nutricionais necessárias para fazer a anamnese alimentar. Para isto, esta ferramenta foi escolhida. A tabela possui mais de 1000 alimentos cadastrados e informa detalhadamente a composição de cada alimento.
 
 \section{\textit{Bootstrap}}
 
-\textit{Bootstrap} é o mais popular \textit{framework} de HTML, CSS e \textit{JavaScript} para desenvolvimento de sistemas \textit{web} de modo responsivo. Esta ferramenta conta com centenas de classes que auxiliam na construção de uma página \textit{web} \cite{bootstrap}.
-
+\textit{Bootstrap} é o mais popular \textit{framework} de HTML, CSS e \textit{JavaScript} para desenvolvimento de sistemas \textit{Web} de modo responsivo. Esta ferramenta conta com centenas de classes HTML que auxiliam na construção de uma página \textit{Web} \cite{bootstrap}.
 Esta ferramenta está presente em cada página do sistema, possibilitando que ele seja acessado de qualquer dispositivo (móvel ou \textit{desktop}). A sua versão estável é a 3.3.7, mas já foi disponibilizada oficialmente a versão 4, versão esta utilizada neste projeto.
 \chapter{Trabalhos Relacionados}
 
-Este capítulo apresenta uma relação de trabalhos com temas relacionados a este. Durante a pesquisa, pode-se concluir que ainda não é muito comum encontrar trabalhos científicos que envolvam desenvolvimento de sistema \textit{web}. 
+Este capítulo apresenta uma relação de trabalhos com temas relacionados a este. Durante o estudo, pode-se concluir que ainda não é muito comum encontrar trabalhos científicos que envolvam desenvolvimento de sistemas \textit{Web}. 
 
-\section{Desenvolvimento de um \textit{software} para avaliação nutricional antropométrica utilizando \textit{Visual Basic for Applications}}
+\section{Desenvolvimento de um \textit{software} para avaliação nutricional antropométrica utilizando \textit{Visual Basic for Applications} (VBA)}
 
-O trabalho de \citeonline{alves} é voltado para \textit{desktop} e possui área em comum em relação a este trabalho. O autor utiliza o VBA, uma implementação feita pela Microsoft para os seus programas. O autor faz um comparativos com alguns produtos de mesmo tema que encontrou no mercado no ano da publicação.
+\citeonline{alves}utiliza o VBA, uma implementação feita pela Microsoft para os seus programas. O autor faz comparativos com alguns produtos de mesmo tema que encontrou no mercado no ano da publicação.
 
-O referido trabalho possui poucas ferramentas em comuns, inclusive por ter aplicação diferente. O sistema que o autor desenvolveu possui pouca portabilidade e compatibilidade, mas se apresenta como um sistema simples e prático. Também utiliza-se do mesmo banco de dados que este trabalho utilizou para cadastrar alimentos com suas informações nutricionais: a tabela TACO.
+O referido trabalho possui poucas ferramentas em comuns. Trata-se de um sistema voltado para \textit{desktop} e a ferramenta que o autor utilizou para desenvolvimento possui pouca portabilidade e compatibilidade, mas se apresenta como um sistema simples e prático. Também utiliza-se do mesmo banco de dados que este trabalho utilizou para cadastrar alimentos com suas informações nutricionais: a tabela TACO.
 
 
 \section{Desenvolvimento e implantação de um sistema de chamadas com foco no ITIL, utilizando-se \textit{Python}, \textit{Django}, \textit{Highcharts} e \textit{Twitter Bootstrap}}
 
-Neste trabalho, \citeonline{carli} utiliza diversas ferramentas para o desenvolvimento do sistema em questão. Trata-se de um sistema de chamadas utilizando um conjunto de boas práticas (ITIL) e algumas ferramentas que inclusive são mencionadas neste trabalho. 
+\citeonline{carli} utilizam diversas ferramentas para o desenvolvimento do sistema em questão. Trata-se de um sistema de chamadas administrativas utilizando um conjunto de boas práticas (ITIL) e algumas ferramentas que inclusive são mencionadas neste trabalho. 
 
 O autor consegue um resultado satisfatório e esclarece bem os resultados obtidos. Contudo, é um trabalho com foco em uma área que se difere deste trabalho. As ferramentas em comum com este trabalho são: a linguagem de programação Python, o \textit{Django}, o \textit{Bootstrap} como \textit{framework} de \textit{front-end} e o \textit{JavaScript}, que mesmo não usando da mesma biblioteca (\textit{JQuery}), a linguagem de programação é a mesma.
 
@@ -687,40 +688,40 @@ Pelo que foi possível observar no \textit{workflow} do trabalho, constata-se qu
 
 
 
-\chapter{Implementação e Estudos de Caso}
+\chapter{Desenvolvimento do Sistema de Auxílio ao Nutricionista}
 
 O nutricionista solicitou um sistema para auxiliar nos cálculos da rotina
 de atendimento do paciente e também que pudesse agendar suas consultas, ao
 tempo em que pudesse visualizar o progresso do paciente. Além disso, foi solicitado a possibilidade de adicionar cardápios as suas consultas para que o paciente possa seguir
-suas recomendações. 
+suas recomendações.
 
 \section{Descrição da implementação}
 
 Durante todo o desenvolvimento, foi necessário conhecer e entender os
 procedimentos de todas as partes (nutricionista e paciente), desde sua primeira visita
 ao consultório até o acompanhamento do nutricionista com prescrição cardápio, para
-que fosse possível atender às necessidades descritas, ao tempo que os resultados
+que fosse possível atender às necessidades descritas para que os resultados
 fossem mais claros e objetivos.
 
-O sistema foi desenvolvido utilizando a metodologia Scrum (seção 2.3.1),
-onde as análises são feitos sobre as histórias de usuário, sendo que cada uma delas
+O sistema foi desenvolvido utilizando a metodologia Scrum (Seção 2.3.1), sem nenhum custo adicional
+para os profissionais interessados, onde as análises são feitas sobre as histórias de usuário, sendo que cada uma delas
 representa uma necessidade do usuário do sistema. Primeiramente, foi definido o
-Product BackLog, com as histórias de usuário relatadas pelo \textit{Product Owner}.
+\textit{Product BackLog}, com as histórias de usuário relatadas pelo \textit{Product Owner}.
 
 %Tabela 1
 \begin{figure} [hbt] 
-\label{table1} 
-\caption{\textit{Product BackLog}}
 \begin{center}
 \includegraphics[width=0.90\textwidth]{table.jpg}
 \end{center}
+\label{table1} 
+\caption{\textit{Product BackLog}}
 \end{figure}
 
-O \textit{Product BackLog} possui oito atributos, especificados na Figura 4:
+O \textit{Product BackLog} possui oito atributos, especificados na Figura 4: %colocar tabela
 
 \begin{enumerate}
 
-\item \textbf{ID}: identifica unicamente uma história do Product BackLog.
+\item \textbf{ID}: identifica unicamente uma história do \textit{Product BackLog}.
 \item \textbf{Ação}: define onde deve ser executado a história.
 \item \textbf{Descrição}: contém a história de usuário
 \item \textbf{Critérios de aceitação}: contém os critérios para que a ação possa ser
@@ -740,43 +741,43 @@ subsistemas. O primeiro define as ações do administrador e do nutricionista. A
 mostra o diagrama de casos de uso.
 
 \begin{figure} [hbt] 
-\label{table1} 
-\caption{Casos de Uso Administrador e Nutricionista}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{uc1.jpeg}
 \end{center}
+\label{table1} 
+\caption{Casos de Uso Administrador e Nutricionista}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{UC01 – Gerencia Nutricionistas}
+\item \textbf{UC01 – Gerenciar Nutricionistas}
 
 \textbf{- Ator:} Administrador
 
 \textbf{- Descrição:} O usuário administrador pode cadastrar, excluir e
 editar os nutricionistas do sistema.
 
-\item \textbf{UC02 – Realiza login e logout}
+\item \textbf{UC02 – Realizar login e logout}
 
 \textbf{- Ator:} Administrador e Nutricionista
 
 \textbf{- Descrição:} Todos os usuários devem se autenticar, para que o
 sistema os identifique e defina suas permissões de acesso.
 
-\item \textbf{UC03 – Gerencia Pacientes}
+\item \textbf{UC03 – Gerenciar Pacientes}
 
 \textbf{- Ator:} Nutricionista
 
 \textbf{- Descrição:} O nutricionista pode cadastrar, editar e excluir
 pacientes do sistema.
 
-\item \textbf{UC04 – Gerencia Consultas/Cardápios}
+\item \textbf{UC04 – Gerenciar Consultas/Cardápios}
 
 \textbf{- Ator:} Nutricionista
 
 \textbf{- Descrição:} O nutricionista pode cadastrar, editar e excluir
-consultas e cardápios feitas sobre um paciente.
+consultas e cardápios feitas sobre um paciente conforme acompanhamento.
 
-\item \textbf{UC05 – Atualiza seus dados}
+\item \textbf{UC05 – Atualizar seus dados}
 
 \textbf{- Ator:} Nutricionista
 
@@ -789,11 +790,11 @@ O segundo subsistema, deixa claro as ações do nutricionista em relação ao
 paciente. A Figura 6 mostra o diagrama de casos de uso desse subsistema.
 
 \begin{figure} [hbt] 
-\label{table1} 
-\caption{Casos de Uso Nutricionista e Paciente}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{uc2.jpeg}
 \end{center}
+\label{table1} 
+\caption{Casos de Uso Nutricionista e Paciente}
 \end{figure}
 
 O diagrama da Figura 6 visa deixar claro as principais ações do nutricionista
@@ -801,14 +802,14 @@ em relação ao paciente e o que o paciente pode fazer. Abaixo, segue a descriç
 detalhada de cada caso de uso:
 
 \begin{itemize}
-\item \textbf{UC06 – Disponibiliza cardápios}
+\item \textbf{UC06 – Disponibilizar cardápios}
 
 \textbf{- Ator:} Nutricionista
 
 \textbf{- Descrição:} Uma vez cadastrado, o nutricionista define se o
 cardápio está ou não disponível para o paciente.
 
-\item \textbf{UC07 – Emite relatórios}
+\item \textbf{UC07 – Emitir relatórios}
 
 \textbf{- Ator:} Nutricionista
 
@@ -837,14 +838,14 @@ energéticos, como peso, altura, massa livre, etc.
 \textbf{- Descrição:} O nutricionista deve cadastrar dados de dobras
 cutâneas, como dobra tricipital, abdominal, etc.
 
-\item \textbf{UC11 – Visualiza Relatórios}
+\item \textbf{UC11 – Visualizar Relatórios}
 
 \textbf{- Ator:} Paciente
 
 \textbf{- Descrição:} O paciente deve ser capaz de visualizar relatórios
 emitidos pelo nutricionista.
 
-\item \textbf{UC12 – Visualiza Cardápios}
+\item \textbf{UC12 – Visualizar Cardápios}
 
 \textbf{- Ator:} Paciente
 
@@ -853,98 +854,97 @@ emitidos pelo nutricionista.
 
 \end{itemize}
 
-A Figura 7, relaciona os principais atores do sistema e seus respectivos dados.
+A Figura 7, relaciona as classes do sistema e seus respectivos campos.
 
 \begin{figure} [hbt] 
-\label{diagClass1} 
-\caption{Diagrama de Classes do Sistema}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{bd-sistema.jpeg}
 \end{center}
+\label{diagClass1} 
+\caption{Diagrama de Classes do Sistema}
 \end{figure}
 
 O nutricionista é quem cadastra novos pacientes. O paciente possui dados como
 dobras cutâneas, circunferência corporal e dados para cálculos energéticos. O
 paciente também pode possuir patologias, onde estas podem interferir na sua
-alimentação. Além disso, poderá ser cadastrado exames feitos sobre um paciente. 
+alimentação. Além disso, poderá ser cadastrado exames feitos sobre um paciente e
+orientações sobre um determinado cardápio. 
 
 Dados como etnia, profissão podem influenciar no fator de atividade física e portanto,
-enfatiza-se a presença destes no diagrama da Figura 7.
-
-Cada alimento, possui micro e macro nutrientes como energia, carboidratos,
-lipídios, etc. Estes devem ser previamente cadastrados antes de prescrever o
-cardápio.
-
+enfatiza-se a presença destes no diagrama da Figura 7. É possível cadastrar cada um destes
+dados durante a consulta do paciente. Após feita a consulta, o nutricionista poderá
+cadastrar cardápios e consequentemente os alimentos a serem consumidos em cada refeição.
 Durante o cadastro de um novo cardápio, o nutricionista seleciona o alimento,
 o horário em que será consumido, a quantidade normal, a medida caseira e se este
 será publicado ou não, podendo ser editado posteriormente.
+
+Cada alimento, possui micro e macro nutrientes como energia, carboidratos,
+lipídios, entre outros. Estes devem ser previamente cadastrados antes de prescrever o
+cardápio.
 
 \section{Telas do sistema}
 
 Nesta seção, são apresentadas telas, obtidas durante a implementação do sistema.
 
 \begin{figure} [hbt] 
-\label{menuNut} 
-\caption{Menu do Nutricionista}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{menuNut1.png}
 \end{center}
+\label{menuNut} 
+\caption{Menu do Nutricionista}
 \end{figure}
 
 \begin{figure} [hbt] 
-\label{menuPac} 
-\caption{Menu do Paciente}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{menuPac1.png}
 \end{center}
+\label{menuPac} 
+\caption{Menu do Paciente}
 \end{figure}
 
-É possível observar que ambos (paciente e nutricionista) podem ter acesso as suas funcionalidades que ficam localizadas
-na barra superior do navegador.
-
+É possível observar nas Figuras 8 e 9 que ambos (paciente e nutricionista) podem ter acesso as suas funcionalidades que ficam localizadas na barra superior do navegador.
 A Figura 8 mostra todas as funcionalidades do Nutricionista. O Nutricionista
 ainda pode emitir relatórios a partir da lista de pacientes acessível no menu. Cada
 funcionalidade dessa fica disponível a partir do momento que o Nutricionista realiza 
 Login no sistema. A Figura 9 mostra o menu do Paciente. O paciente pode obter dados
 do relatório ou do cardápio apenas digitando seu ID e senha do sistema.
-
 Como já mencionado anteriormente, o \textit{Django} possui um sistema de URL's e é através dele que
 é feito o tratamento de permissões, uma vez que somente o nutricionista é autorizado de fazer cadastro
 de pacientes. A Figura 10 mostra um exemplo de lista de usuários previamente cadastrados no sistema.
 
 \begin{figure} [hbt]
-\label{listUser} 
-\caption{Lista de Usuários Cadastrados}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{listaUsuarios.png}
 \end{center}
+\label{listUser} 
+\caption{Lista de Usuários Cadastrados}
 \end{figure}
 
 A Figura 11 mostra a tela de cadastro de pacientes, onde é possível cadastrar
 seus dados pessoais e os demais dados para fins de acompanhamento do paciente. 
 
 \begin{figure} [hbt]
-\label{cadastroPac} 
-\caption{Tela de Cadastro de Pacientes}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{cadastroPac1.png}
 \end{center}
+\label{cadastroPac} 
+\caption{Tela de Cadastro de Pacientes}
 \end{figure}
 
 \begin{figure} [hbt]
-\label{cadastroCard} 
-\caption{Tela de Cadastro de Cardápio}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{cadastroCard.png}
 \end{center}
+\label{cadastroCard} 
+\caption{Tela de Cadastro de Cardápio}
 \end{figure}
 
 \begin{figure} [hbt]
-\label{cadastroCons} 
-\caption{Tela de Cadastro de Consulta}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{cadastroCons1.png}
 \end{center}
+\label{cadastroCons} 
+\caption{Tela de Cadastro de Consulta}
 \end{figure}
 
 As Figuras 12 e 13 mostram as telas de cadastro de cardápio e consulta,
@@ -977,62 +977,43 @@ A Figura 15 mostra o cardápio com a descrição e todas as suas informações
 nutricionais (macro e micro nutrientes), além do nome do paciente para quem foi
 prescrito.
 Todas as funcionalidades aqui apresentadas, atualmente, encontram-se
-implementadas, onde agora são realizados testes com nutricionistas e pacientes, o público-alvo.
+implementadas e já estão prontas para serem usufruidas pelos profissionais interessados.
 
 \begin{figure} [hbt]
-\label{cardPac} 
-\caption{Cardápio do Paciente}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{cardPac1.png}
 \end{center}
+\label{cardPac} 
+\caption{Cardápio do Paciente}
 \end{figure}
 
 \chapter{Resultados e Discussão}
 
-Com base no levantamento de requisitos, representado pelas histórias de usuário, foi desenvolvido o sistema. Foram realizados testes com três potenciais usuários do sistema, buscando uma avaliação do ponto de vista destas pessoas.
+Com base no levantamento de requisitos, representado pelas histórias de usuário, foi desenvolvido o sistema. Foi feito uma avaliação do sistema sob os critérios de usabilidade, que deve contemplar os seguintes fundamentos: facilidade de uso, facilidade de aprendizado, memorabilidade, produtividade, flexibilidade e satisfação do usuário. Abaixo segue uma tabela com os critérios de usabilidade segundo \citeonline{nogueira}, ao qual sob ele foi formulado o questionário.
+O formulário foi criado através do \textit{Google Forms} onde foi possível gerar um questionário que aborde questões que assegurem a IHC (interface humano-computador).
 
-O primeiro usuário observou do ponto de vista de um nutricionista e relatou que o sistema é bem simples e que atenderia suas necessidades primárias durante o atendimento de um paciente. Sugeriu que o sistema dispusesse de um chat para conversar com os pacientes durante o acompanhamento nutricional.
+{Critérios de Usabilidade (NOGUEIRA, 2003).}
 
-O segundo usuário também observou do ponto de vista de um nutricionista e relatou que o sistema precisava de mais informações técnicas a respeito das patologias, mas que continha as informações essenciais para atender e acompanhar um paciente.
+Feito a pesquisa através do \textit{Google Forms}, foi obtido os resultados, apresentados a seguir. A pesquisa foi feita com nutricionistas que já faziam o uso do sistema e após o uso, foi solicitado que respondessem ao questionário. O sistema é totalmente gratuito e está disponível no \textit{link}: https://sysnut.herokuapp.com, possuindo apenas limite de acessos mensais, por motivo de seu domínio e hospedagem serem gratuitos.
 
-Por fim, o terceiro usuário observou do ponto de vista do paciente. Relatou que as informações do seu cardápio e seu relatório se mostravam claras e objetivas. Também sugeriu que ele pudesse interagir com o nutricionista quando fosse necessário a fim de tirar dúvidas sobre o acompanhamento.
-
-A Figura 16 traz o resumo da opinião dos três usuários e a classificação dos mesmos diante a opinião relatada. A classificação pode ser dada em 3 níveis: bom, regular e ruim.
-
-\begin{figure} [hbt]
-\label{cardPac} 
-\caption{Cardápio do Paciente}
-\begin{center}
-\includegraphics[width=1.0\textwidth]{table4.jpg}
-\end{center}
-\end{figure}
-
-Todos os usuários que opinaram sobre o sistema são membros do corpo discente da Universidade Federal do Piauí, Campus Senador Helvídio Nunes de Barros.
 
 % ---
 % Conclusão
 % ---
 \chapter{Conclusão}
 
-O presente trabalho trata de um sistema para nutricionista com o intuito de ajudar a fazer o acompanhamento de dietas com seus pacientes de forma gratuita para ambos, tanto paciente como nutricionista. Foi desenvolvido uma ferramenta simples e que atende as
-principais necessidades relatadas pelos usuários.
-
-Para solucionar tais problemas, desenvolveu-se um sistema \textit{web} com as
+O presente trabalho trata de um sistema para nutricionista com o intuito de ajudar a fazer o acompanhamento de dietas com seus pacientes de forma gratuita para ambos, tanto paciente como nutricionista. 
+Para solucionar tais problemas, desenvolveu-se um sistema \textit{Web} totalmente gratuito com as
 principais funcionalidades elencadas nas histórias de usuário, possibilitando assim
 que qualquer usuário (nutricionista ou paciente) pudesse acessá-lo de qualquer
-dispositivo com acesso à internet.
+dispositivo com acesso à Internet.
 
-Antes de começar o desenvolvimento, estudou-se o problema e entendeu-se
-quais as principais necessidades: o trabalho repetitivo e cansativo de calcular as
-informações nutricionais de um cardápio, a falta de uma agenda que interaja com os
-dados de acompanhamento nutricional. Com base nisso, foi realizado o levantamento de
-requisitos através das histórias de usuário para só então passar para a fase de
-desenvolvimento.
+Conforme a avaliação realizada pelos próprios nutricionistas, foi atingido o objetivo do trabalho e com um resultado satisfatório, tendo em vista as respostas obtidas. O nutricionista pode agilizar seu atendimento e se comunicar com o 
+paciente através do sistema, melhorando a qualidade do seu serviço. Através do estudo aprofundado das ferramentas utilizadas, foi possível adquirir um conhecimento mais aprofundado sobre o desenvolvimento de sistemas \textit{Web}, além de que foi possível também conhecer a rotina de trabalho do nutricionista e uma vez que estudado o problema, foi possível ajudar a solucioná-lo, possibilitando que se possa reduzir os índices de obesidade existentes no Brasil através da prescrição de dietas que orientem sobre uma alimentação saudável e rica em nutrientes essenciais ao ser humano.
 
-Como trabalhos futuros, planeja-se ampliar o sistema de modo que o paciente
-possa interagir mais com o nutricionista e posteriormente, disponibilizar um aplicativo
-móvel, para que o paciente possa receber notificações enviadas pelo seu próprio
-nutricionista, facilitando e melhorando o acompanhamento do mesmo.
+Como trabalhos futuros, planeja-se desenvolver um aplicativo para celulares com sistema operacional Android e iOS,
+para que a comunicação entre paciente e nutricionista aconteça de forma mais ágil e também possibilite uma melhor
+experiência para ambos.
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
