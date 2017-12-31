@@ -40,7 +40,6 @@
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 \usepackage{pdflscape}
-\usepackage{longtable}
 
 
 
@@ -79,7 +78,7 @@ de Lucena Drumond
 \instituicao{%
   Universidade Federal do Piauí
   \par
-  Campus Senador Helvídio Nunes de Barros 
+  Campus Senador Heuvídio Nunes de Barros 
   \par
   Bacharelado em Sistemas de Informação}
 \tipotrabalho{Monografia}
@@ -368,7 +367,7 @@ para prestar atendimento adequado ao seu público-alvo.
 
 Diante disso, é imprescindível uma ferramenta computacional que possibilite a inclusão de refeições, troca de mensagens entre
 os usuários do sistema (paciente e nutricionista), 
-cálculo das necessidades energéticas e análise do
+cálculo das necessidades energéticas e analise do
 cardápio auxiliando o profissional durante seu atendimento, trazendo mais
 comodidade e rapidez ao seu serviço prestado, de qualquer dispositivo que esteja acessando, desde
 que tenha acesso à internet.
@@ -491,8 +490,7 @@ linguagem SQL como interface. A MySQL AB foi adquirida pela Sun Microsystems em
 2008, a qual posteriormente foi comprada pela Oracle, incluindo o SGBD MySQL.
 Atualmente, esse é um dos bancos de dados mais utilizados do mundo, com mais de
 10 milhões de instalações e um dos motivos para essa popularidade é devido a fácil
-integração a também popular linguagem PHP \cite{mottin}. 
-Entre os usuários mais populares do MySQL estão: NASA, Bradesco, Dataprev, HP, Nokia, Sony, Sistemas Cisco, entre outros.
+integração a também popular linguagem PHP \cite{mottin}. Entre os usuários mais populares do MySQL estão: NASA, Bradesco, Dataprev, HP, Nokia, Sony, Sistemas Cisco, entre outros.
 O MySQL é o banco de dados de código aberto mais popular do mundo. Ainda
 mantido pela Oracle, tornou-se a principal escolha de banco de dados para aplicativos
 \textit{Web}, usado por \textit{websites} muito conhecidos como: Facebook, Twitter, YouTube, entre
@@ -529,7 +527,7 @@ algumas tags HTML e suas funcionalidades de marcação:
 \begin{center}
 \includegraphics[width=0.75\textwidth]{exhtml.png} %% PARA COLOCAR O ARQUIVO DA IMAGEM NO SHARELATEX, CLIQUE NO ÍCONE QUE PARECE UMA FLECHINHA PARA CIMA (ATUALIZAR), CLIQUE EM UPLOAD E PROCURE A IMAGEM EM SEU COMPUTADOR.
 \end{center}
-\label{exhtml1} 
+\label{figura1} 
 %% LABEL SERVE PARA VOCÊ REFERENCIAR A FIGURA NO MEIO DO TEXTO (VEJA LINHA 330: \ref{figura1}). ASSIM VOCÊ NÃO PERDE A REFERÊNCIA QUANDO MUDA A FIGURA DE LUGAR
 \caption{Exemplo de código HTML.}
 \end{figure}
@@ -547,7 +545,7 @@ para especificar os diferentes estilos de propriedades da página.
 \begin{center}
 \includegraphics[width=0.75\textwidth]{excss.png}
 \end{center}
-\label{excss1} 
+\label{figura1} 
 \caption{Exemplo de código CSS.}
 \end{figure}
 
@@ -603,7 +601,7 @@ conjunto de \textit{sprints} que formam uma versão utilizada do produto é cham
 \begin{center}
 \includegraphics[width=1\textwidth]{scrum.png}
 \end{center}
-\label{scrum1} 
+\label{figura1} 
 \caption{Ciclo de Desenvolvimento Scrum \cite{vascharim}}
 \end{figure}
 
@@ -651,7 +649,7 @@ ao tempo que o paciente obtenha um resultado com maior satisfação.
 
 \section{Gasto Enérgico Total (GET)}
 
-O gasto energético total (GET) compreende a soma de todos os gastos energéticos diários a seguir: a
+O gasto energético total (GET) compreende a soma de todos os gastos energéticos diários a seguir: A
 taxa metabólica basal (TMB) que compreende o gasto energético necessário para a
 consumação das funções vitais do organismo; o gasto energético da atividade física
 ou fator de atividade (FA), que representa o gasto calórico com as atividades físicas
@@ -670,7 +668,6 @@ Para desenvolver o sistema, foi necessário utilizar-se de um banco de dados que
 
 \textit{Bootstrap} é o mais popular \textit{framework} de HTML, CSS e \textit{JavaScript} para desenvolvimento de sistemas \textit{Web} de modo responsivo. Esta ferramenta conta com centenas de classes HTML que auxiliam na construção de uma página \textit{Web} \cite{bootstrap}.
 Esta ferramenta está presente em cada página do sistema, possibilitando que ele seja acessado de qualquer dispositivo (móvel ou \textit{desktop}). A sua versão estável é a 3.3.7, mas já foi disponibilizada oficialmente a versão 4, versão esta utilizada neste projeto.
-
 \chapter{Trabalhos Relacionados}
 
 Este capítulo apresenta uma relação de trabalhos com temas relacionados a este. Durante o estudo, pode-se concluir que ainda não é muito comum encontrar trabalhos científicos que envolvam desenvolvimento de sistemas \textit{Web}. 
@@ -689,31 +686,6 @@ O referido trabalho possui poucas ferramentas em comuns. Trata-se de um sistema 
 O autor consegue um resultado satisfatório e esclarece bem os resultados obtidos. Contudo, é um trabalho com foco em uma área que se difere deste trabalho. As ferramentas em comum com este trabalho são: a linguagem de programação Python, o Django, o \textit{Bootstrap} como \textit{framework} de \textit{front-end} e o \textit{JavaScript}, que mesmo não usando da mesma biblioteca (\textit{JQuery}), a linguagem de programação é a mesma.
 
 Pelo que foi possível observar no \textit{workflow} do trabalho, constata-se que é um trabalho simples e bastante objetivo, mas que faz uso de ferramentas poderosas.
-
-
-\section{Quadro Comparativo}
-
-Com o objetivo de comparar as ferramentas do mercado com a que foi obtida através deste trabalho, foi feito um quadro comparativo com alguns aspectos considerados importantes pelo autor em relação aos demais. Todas as ferramentas analisadas foram criadas para funcionar sobre o ambiente \textit{Web}, tal qual a deste trabalho. As ferramentas que não possuem versão gratuita para graduandos, são gratuitas para teste, com período de utilização de 15 dias.
-
-\begin{table}[hbt]
-\centering
-\begin{tabular}{p{4cm}ccccc}
-\\ \hline
-\multicolumn{1}{c}{\textbf{Características}}        & \multicolumn{5}{c}{\textbf{Ferramenta}}                         \\ \hline
-                               & WebDiet & Nutrium & DietSmartSystem & DietWin & \textbf{SysNut} \\ \hline
-\textbf{Limite de Consultas}            & 200     & Não       & Não               & Não       & \textbf{Não}      \\ \hline
-\textbf{Aplicativo Mobile}              & Sim       & Sim       & Sim               & Não       & \textbf{Não}      \\ \hline
-\textbf{Aplicativo Desktop}             & Não       & Sim       & Sim               & Sim       & \textbf{Não}      \\ \hline
-\textbf{Interação com Paciente}         & Sim       & Sim       & Não               & Sim       & \textbf{Sim}      \\ \hline
-\textbf{Plano gratuito para estudantes} & Sim       & Não       & Sim               & Não       & \textbf{Sim}      \\ \hline
-\textbf{Monitoramento em tempo real}    & Não       & Não       & Não               & Não       & \textbf{Sim}      \\ \hline
-\end{tabular}
-\caption{Comparação de ferramentas web para nutricionistas}
-\label{comparacaoWeb}
-\end{table}
-
-O parâmetro para seleção das características para comparação foi a versão gratuita de cada sistema, levando em conta que todos cumprem o requisito de atendimento básico do paciente e conclusão do cardápio com especificações do nutricionista. Quaisquer outras características foram desconsideradas, levando em conta que este sistema é totalmente gratuito e não necessita de pagamento para usofruto total e irrestrito.
-
 
 
 
@@ -735,7 +707,18 @@ fossem mais claros e objetivos.
 O sistema foi desenvolvido utilizando a metodologia Scrum (Seção 2.3.1), sem nenhum custo adicional
 para os profissionais interessados, onde as análises são feitas sobre as histórias de usuário, sendo que cada uma delas
 representa uma necessidade do usuário do sistema. Primeiramente, foi definido o
-\textit{Product BackLog} - que pode ser encontrado na lista de apêndices deste trabalho, com as histórias de usuário relatadas pelo \textit{Product Owner}. O \textit{Product BackLog} possui oito atributos, especificados a seguir:
+\textit{Product BackLog}, com as histórias de usuário relatadas pelo \textit{Product Owner}.
+
+%Tabela 1
+\begin{figure} [hbt] 
+\begin{center}
+\includegraphics[width=0.90\textwidth]{table.jpg}
+\end{center}
+\label{table1} 
+\caption{\textit{Product BackLog}}
+\end{figure}
+
+O \textit{Product BackLog} possui oito atributos, especificados na Figura 4: %colocar tabela
 
 \begin{enumerate}
 
@@ -755,7 +738,7 @@ para se implementar a história.
 \section{Casos de Uso}
 
 Com base nas histórias elencadas no \textit{Product BackLog}, o sistema foi divido em 2
-subsistemas. O primeiro define as ações do administrador e do nutricionista. A Figura 4
+subsistemas. O primeiro define as ações do administrador e do nutricionista. A Figura 5
 mostra o diagrama de casos de uso.
 
 \begin{figure} [hbt] 
@@ -811,7 +794,7 @@ como Nome, E-mail, Senha de Login, etc.
 \end{itemize}
 
 O segundo subsistema, deixa claro as ações do nutricionista em relação ao
-paciente. A Figura 5 mostra o diagrama de casos de uso desse subsistema.
+paciente. A Figura 6 mostra o diagrama de casos de uso desse subsistema.
 
 \begin{figure} [hbt] 
 \begin{center}
@@ -865,19 +848,19 @@ relatórios ao paciente.
 
 \item \textbf{UC13 – Interagir com o Nutricionista}
 
-\textbf{- Ator:} Paciente
+\textbf{- Atores:} Paciente
 
 \textbf{- Descrição:} O paciente poderá interagir com o nutricionista por meio de mensagens e através delas sugerir alterações no cardápio.
 
 \item \textbf{UC14 – Atualizar seus dados}
 
-\textbf{- Ator:} Paciente
+\textbf{- Atores:} Paciente
 
 \textbf{- Descrição:} O paciente poderá alterar seus próprios dados como login e senha, nome e sobrenome, entre outros.
 
 \end{itemize}
 
-A Figura 6, relaciona as classes do sistema e seus respectivos campos.
+A Figura 7, relaciona as classes do sistema e seus respectivos campos.
 
 \begin{figure} [hbt] 
 \begin{center}
@@ -890,15 +873,17 @@ A Figura 6, relaciona as classes do sistema e seus respectivos campos.
 O nutricionista é quem cadastra novos pacientes. O paciente possui dados como
 dobras cutâneas, circunferência corporal e dados para cálculos energéticos. O
 paciente também pode possuir patologias, onde estas podem interferir na sua
-alimentação. Além disso, pode ser cadastrado exames feitos sobre um paciente e
+alimentação. Além disso, poderá ser cadastrado exames feitos sobre um paciente e
 orientações sobre um determinado cardápio. 
+
 Dados como etnia, profissão podem influenciar no fator de atividade física e portanto,
-enfatiza-se a presença destes no diagrama da Figura 6. É possível cadastrar cada um destes
+enfatiza-se a presença destes no diagrama da Figura 7. É possível cadastrar cada um destes
 dados durante a consulta do paciente. Após feita a consulta, o nutricionista poderá
 cadastrar cardápios e consequentemente os alimentos a serem consumidos em cada refeição.
 Durante o cadastro de um novo cardápio, o nutricionista seleciona o alimento,
 o horário em que será consumido, a quantidade normal, a medida caseira e se este
 será publicado ou não, podendo ser editado posteriormente.
+
 Cada alimento, possui micro e macro nutrientes como energia, carboidratos,
 lipídios, entre outros. Estes devem ser previamente cadastrados antes de prescrever o
 cardápio.
@@ -906,15 +891,6 @@ cardápio.
 \section{Telas do sistema}
 
 Nesta seção, são apresentadas telas, obtidas durante a implementação do sistema.
-É possível observar nas Figuras 7 e 8 que ambos (paciente e nutricionista) podem ter acesso as suas funcionalidades que ficam localizadas na barra superior do navegador.
-A Figura 7 mostra todas as funcionalidades do Nutricionista. O Nutricionista
-ainda pode emitir relatórios a partir da lista de pacientes acessível no menu. Cada
-funcionalidade dessa fica disponível a partir do momento que o Nutricionista realiza 
-Login no sistema. A Figura 8 mostra o menu do Paciente. O paciente pode obter dados
-do relatório ou do cardápio apenas digitando seu ID e senha do sistema.
-Como já mencionado anteriormente, o \textit{Django} possui um sistema de URL's e é através dele que
-é feito o tratamento de permissões, uma vez que somente o nutricionista é autorizado de fazer cadastro
-de pacientes. A Figura 9 mostra um exemplo de lista de usuários previamente cadastrados no sistema.
 
 \begin{figure} [hbt] 
 \begin{center}
@@ -932,55 +908,52 @@ de pacientes. A Figura 9 mostra um exemplo de lista de usuários previamente cad
 \caption{Menu do Paciente}
 \end{figure}
 
+É possível observar nas Figuras 8 e 9 que ambos (paciente e nutricionista) podem ter acesso as suas funcionalidades que ficam localizadas na barra superior do navegador.
+A Figura 8 mostra todas as funcionalidades do Nutricionista. O Nutricionista
+ainda pode emitir relatórios a partir da lista de pacientes acessível no menu. Cada
+funcionalidade dessa fica disponível a partir do momento que o Nutricionista realiza 
+Login no sistema. A Figura 9 mostra o menu do Paciente. O paciente pode obter dados
+do relatório ou do cardápio apenas digitando seu ID e senha do sistema.
+Como já mencionado anteriormente, o \textit{Django} possui um sistema de URL's e é através dele que
+é feito o tratamento de permissões, uma vez que somente o nutricionista é autorizado de fazer cadastro
+de pacientes. A Figura 10 mostra um exemplo de lista de usuários previamente cadastrados no sistema.
 
 \begin{figure} [hbt]
 \begin{center}
-\includegraphics[width=0.80\textwidth]{listaUsuarios.png}
+\includegraphics[width=0.55\textwidth]{listaUsuarios.png}
 \end{center}
 \label{listUser} 
 \caption{Lista de Usuários Cadastrados}
 \end{figure}
 
-A Figura 10 mostra a tela de cadastro de pacientes, onde é possível cadastrar
+A Figura 11 mostra a tela de cadastro de pacientes, onde é possível cadastrar
 seus dados pessoais e os demais dados para fins de acompanhamento do paciente. 
 
-\cleardoublepage
-
-\begin{landscape}
 \begin{figure} [hbt]
 \begin{center}
-\includegraphics[width=1.5\textwidth]{cadastroCons1.png}
+\includegraphics[width=0.55\textwidth]{cadastroPac1.png}
 \end{center}
 \label{cadastroPac} 
 \caption{Tela de Cadastro de Pacientes}
 \end{figure}
-\end{landscape}
 
-\cleardoublepage
-
-\begin{landscape}
 \begin{figure} [hbt]
 \begin{center}
-\includegraphics[width=1.5\textwidth]{cadastroCard.png}
+\includegraphics[width=0.55\textwidth]{cadastroCard.png}
 \end{center}
 \label{cadastroCard} 
 \caption{Tela de Cadastro de Cardápio}
 \end{figure}
-\end{landscape}
 
-\cleardoublepage
-
-\begin{landscape}
 \begin{figure} [hbt]
 \begin{center}
-\includegraphics[width=1\textwidth]{cadastroCons2.png}
+\includegraphics[width=0.55\textwidth]{cadastroCons1.png}
 \end{center}
 \label{cadastroCons} 
 \caption{Tela de Cadastro de Consulta}
 \end{figure}
-\end{landscape}
 
-As Figuras 11 e 12 mostram as telas de cadastro de cardápio e consulta,
+As Figuras 12 e 13 mostram as telas de cadastro de cardápio e consulta,
 respectivamente. É durante a consulta que o nutricionista cadastra os dados de
 acompanhamento do paciente. O cardápio só poderá ser cadastrado se a consulta já
 tiver sido cadastrada previamente.
@@ -994,42 +967,31 @@ em que a consulta foi realizada. Em seguida, a descrição do cardápio, disponi
 e os alimentos a serem cadastrados, que devem ter horário de consumo, quantidade
 e medida caseira.
 
-\cleardoublepage
-
-\begin{landscape}
 \begin{figure} [hbt]
-\begin{center}
-\includegraphics[width=1.5\textwidth]{relatPac1.png}
-\end{center}
 \label{relatPac} 
 \caption{Relatório do Paciente}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{relatPac1.png}
+\end{center}
 \end{figure}
-\end{landscape}
-\cleardoublepage
 
-A Figura 13 mostra o relatório do paciente, onde é possível ver todos os dados
+A Figura 14 mostra o relatório do paciente, onde é possível ver todos os dados
 durante as consultas que foram realizadas e os dados de acompanhamento que foram
 obtidos em cada uma delas.
 
-A Figura 14 mostra o cardápio com a descrição e todas as suas informações
+A Figura 15 mostra o cardápio com a descrição e todas as suas informações
 nutricionais (macro e micro nutrientes), além do nome do paciente para quem foi
 prescrito.
 Todas as funcionalidades aqui apresentadas, atualmente, encontram-se
 implementadas e já estão prontas para serem usufruidas pelos profissionais interessados.
 
-\cleardoublepage
-
-\begin{landscape}
 \begin{figure} [hbt]
 \begin{center}
-\includegraphics[width=1.5\textwidth]{cardPac1.png}
+\includegraphics[width=1.0\textwidth]{cardPac1.png}
 \end{center}
 \label{cardPac} 
 \caption{Cardápio do Paciente}
 \end{figure}
-\end{landscape}
-
-\cleardoublepage
 
 \chapter{Resultados e Discussão}
 
@@ -1108,18 +1070,16 @@ experiência para ambos.
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 
+\begin{landscape}
 % ----------------------------------------------------------
 \chapter{\textit{Product BackLog}}
 % ----------------------------------------------------------
-
-Foi realizado um levantamento de requisitos com o nutricionista tendo como base as necessidades de seu atendimento básico, desde o primeiro momento no consultório até a conclusão do acompanhamento. Uma vez que o profissional relatou suas dificuldades, foram feitas as histórias de usuário e definido os valores da implementação de cada uma e seu respectivo retorno de investimento. O desenvolvimento do sistema foi realizado em 3 \textit{sprints}, dos quais podem ser vistos a seguir as funcionalidades que foram desenvolvidas cada um.
-
-\begin{landscape}
-\begin{center}
-\begin{longtable}{|p{0.5cm}|p{2cm}|p{5cm}|p{4cm}|p{2.5cm}|p{3.7cm}|p{2cm}|p{2cm}|}
-\caption{\textit{Product BackLog}}
-\label{tableBacklog}
-\\ \hline
+\begin{table}[h]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|p{0.5cm}|p{2cm}|p{5cm}|p{4cm}|p{2.5cm}|p{3.7cm}|p{2cm}|p{2cm}|}
+\hline
 \textbf{ID} & \textbf{Ação} & \textbf{Descrição}                                                                                                 & \textbf{Critérios de Aceitação} & \textbf{VN (Valor de Negócio)} & \textbf{Estimativa (Story Points - SP)} & \textbf{ROI (VN/SP)} & \textbf{Sprint} \\ \hline
 1                               & Login                             & Sendo um administrador, preciso realizar login no sistema para que possa ter acesso ao sistema como administrador. & Verificar autenticidade; Exibir página do usuário.  & 800                                                & 5                                                           & 160                                      & 1                                   \\ \hline
 2                               & Login                             & Sendo um nutricionista, preciso realizar login no sistema para que possa ter acesso ao sistema como nutricionista. & Verificar autenticidade; Exibir página do usuário.  & 1000                                               & 5                                                           & 200                                      & 1                                   \\ \hline
@@ -1127,18 +1087,8 @@ Foi realizado um levantamento de requisitos com o nutricionista tendo como base 
 4                               & Cadastro                          & Sendo um nutricionisa, preciso coletar os dados antropométricos do paciente para seja possível realizar a anamnese alimentar com mais precisão. & Verificar preenchimento dos campos;                 & 1000                                               & 40                                                          & 25                                       & 1                                   \\ \hline
 5                               & Cadastro                          & Sendo um nutricionista, preciso anexar documentos como laudos médicos para que ateste algum tipo de patologia que o paciente possa ter.         & Verificar preenchimento dos campos;                 & 2000                                               & 50                                                          & 40                                       & 1                                   \\ \hline
 6                               & Cadastro                          & Sendo um nutricionista, preciso cadastrar o fator de atividade física do paciente para que o cardápio se adeque a sua rotina.                   & Verificar preenchimento dos campos;                 & 2000                                               & 20                                                          & 100                                      & 1                               	\\ \hline
-7                             & Cadastro                          & Sendo um nutricionista, preciso relacionar alimentos que o paciente tenha intolerância, alergia ou mesmo preferência para que possa ser feito o cardápio com suas particularidades. & Verificar preenchimento dos campos;                 & 2000                                               & 50                                                          & 40                                       & 1                               	\\ \hline
-9                             & Cadastro                          & Sendo um nutricionista preciso cadastrar as principais patologias do paciente para que o cardápio esteja de acordo com suas necessidades.                                           & Verificar preenchimento dos campos;                 & 3000                                               & 100                                                         & 30                                       & 2                               	\\ \hline
-10                            & Cadastro                          & Sendo um nutricionista, preciso cadastrar uma opção diferente de cada refeição na dieta para que o paciente possa optar por outro consumo, se preferir.                             & Verificar preenchimento dos campos;                 & 2500                                               & 20                                                          & 125                                      & 3                               	\\ \hline
-11                            & Cadastro                          & Sendo um nutricionista, preciso definir o objetivo da dieta do paciente para que a orientação seja direcionada ao objetivo.                                                         & Verificar preenchimento dos campos;                            & 1500                                               & 10                                                          & 150                                      & 2                               	\\ \hline
-12                            & Cadastro                          & Sendo um nutricionista, preciso realizar uma ou mais consultas de um paciente para que possa ser feita uma análise completa.                                                        & Verificar preenchimento dos campos;                            & 3000                                               & 80                                                          & 37,5                                     & 2                               	\\ \hline
-13                            & Cadastro                          & Sendo um nutricionista, preciso que as consultas tenham datas marcadas para que seja possível organizar uma agenda para os pacientes.                                               & Verificar preenchimento dos campos;                            & 1000                                               & 10                                                          & 100                                      & 1                               	\\ \hline
-14                            & Cadastro                          & Sendo um nutricionista, preciso definir se a dieta está disponível ou não para o paciente para que o mesmo só tenha acesso quando a orientação final for dada.                      & Verificar preenchimento dos campos;                            & 2000                                               & 75                                                          & 26,67                                    & 3                               	\\ \hline
-15                            & Cadastro                          & Como administrador preciso importar planilhas de alimentos para facilitar a escolha pelo nutricionista.                                                                             & Verificar dados da planilha; Exibir mensagem de sucesso.       & 3000                                               & 200                                                         & 15                                       & 2                               	\\ \hline
-16                            & Relatório                         & Sendo um nutricionista, preciso acompanhar a evolução de um paciente para que possa reavaliar seu quadro.                                                                           & Verificar consultas existentes; Exibir relatório com os dados. & 3000                                               & 200                                                         & 15                                       & 3                               	\\ \hline
-
-\end{longtable}
-\end{center}
+\end{tabular}
+\end{table}
 
 \end{landscape}
 \end{apendicesenv}

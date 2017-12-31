@@ -1,0 +1,19 @@
+Ferramentas Web
+
+		Limite de consultas	Aplicativo Mobile/Desk	Interação c/ paciente Plano gratuito para estudantes Monitoramento em tempo Real
+WebDiet		200						S/N					S							S								N
+
+Nutrium		N 						S/S					S							N 								S
+
+Diet
+Smart 		N						S/S					N 							S 								N
+System
+
+DietWin		N 						N/S					S 							N 								N
+
+DietBox		
+
+SysNut		N 						N/N 				S 							S 								S
+
+
+
