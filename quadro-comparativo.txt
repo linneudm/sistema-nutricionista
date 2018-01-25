@@ -11,7 +11,7 @@ System
 
 DietWin		N 						N/S					S 							N 								N
 
-DietBox		
+DietBox		N 						N/N 				S 							S 								S
 
 SysNut		N 						N/N 				S 							S 								S
 
