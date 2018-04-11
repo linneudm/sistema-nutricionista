@@ -4,6 +4,6 @@ Esse repositório contém arquivos do trabalho de conclusão de curso de Linneu 
 
 ## Autores
 
-* **Linneu Lopes** - *Desenvolvedor* 
-* **Jonnison Lima** - *Gerente de Projetos*
-* **Alcemir Santos** - *Orientador*
+* **Linneu Lopes** - *Desenvolvedor* - [LinneuDM](https://github.com/LinneuDM)
+* **Alcemir Santos** - *Orientador* - [Alcemir Santos](https://github.com/alcemirsantos)
+* **Jonnison Lima** - *Coorientador* - [Jonnison](https://github.com/jonnison)
