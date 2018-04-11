@@ -1,0 +1,62 @@
+\chapter{Referencial Teórico} \label{ch:referencial}
+
+{\color{red}
+Este capítulo apresnta o referencial teórico utilizado para construção dos systema Web proposto (\SysNut). Vale ressaltar que somente os conceitos técnicos referentes à área de Nutrição são apresentados aqui. Detalhes sobre a implementação e ferramentas utilizadas serão apresentados no Capítulo \ref{ch:sysnut}.
+}
+
+\section{Atividades do Nutricionista Apoiadas Pelo \SysNut}
+
+{\color{red}
+\subsection{Avaliação X}
+\subsection{Avaliação Y}
+\subsection{Acompanhamento Z}
+
+\section{Conceitos Importantes}
+
+Esta seção aprenta conceitos importantes existentes no contexto das atividades apresentadas na seção anterior\ldots
+}
+
+
+\subsection{Taxa Metabólica Basal (TMB)}
+
+A taxa metabólica basal (TMB) é a quantidade de energia necessária para a
+conservação das funções vitais do organismo, representando a maior parte do
+consumo energético diário em humanos (cerca de 50\% a 70\%). Sendo calculada em
+condições padrão de jejum, repouso físico e mental em ambiente calmo com controle
+de temperatura, iluminação e barulhos \cite{ruiz} \cite{harris1}.
+
+A TMB sofre grande influência da massa magra, sexo, idade, composição
+corporal e predisposição genética. Fatores como o funcionamento do sistema nervoso
+e os hormônios tireoidianos, também contribuem para diferença da TMB entre os
+indivíduos. Para a estimativa da TMB, foram desenvolvidas várias equações
+matemáticas, utilizando variáveis de fácil mensuração e de baixo custo, como idade,
+altura e massa corporal total. Entre tantas equações, são utilizadas as seguintes:
+\citeonline{harris1}, sua reformulação \citeonline{harris2} e \citeonline{cunningham} por possuírem grande
+aceitabilidade e credibilidade pelas entidades relacionadas a Nutrição \cite{weijs}.
+
+A Taxa Metabólica Basal torna-se indispensável durante o atendimento nutricional, visto
+que ele é responsável pela individualização da sua dieta, de forma que possa atender
+todas as necessidades calóricas do mesmo, auxiliando na melhora do quadro
+nutricional do paciente \cite{pedrosa}.
+
+A ferramenta criada a partir deste trabalho deve então focar nos dados que estas fórmulas podem apresentar
+como resultado, a fim de que possa facilitar o atendimento por parte do nutricionista,
+ao tempo que o paciente obtenha um resultado com maior satisfação.
+
+
+\subsection{Gasto Enérgico Total (GET)}
+
+O gasto energético total (GET) compreende a soma de todos os gastos energéticos diários a seguir: A
+taxa metabólica basal (TMB) que compreende o gasto energético necessário para a
+consumação das funções vitais do organismo; o gasto energético da atividade física
+ou fator de atividade (FA), que representa o gasto calórico com as atividades físicas
+do cotidiano e o exercício físico; e o efeito térmico dos alimentos (ETA), relacionado
+com a digestão, a absorção e o metabolismo dos alimentos. Em indivíduos saudáveis,
+a TMB corresponde aproximadamente de 60\% a 70\% do gasto diário, o ETA entre 5\% 
+e 15\% e o GEAF ou FA de 15\% a 30\%, sendo este último o elemento que mais varia
+entre os indivíduos \cite{hill}. 
+
+\subsection{TACO - Tabela Brasileira de Composição de Alimentos}
+
+Reconhecida oficialmente pelo Ministério da Saúde e produzida pela Universidade de Campinas, o objetivo da TACO é gerar dados sobre a composição dos principais alimentos consumidos no Brasil, de maneira que possa assegurar a confiabilidade dos resultados \cite{taco}. 
+Para desenvolver o sistema, foi necessário utilizar-se de um banco de dados que dispusesse das informações nutricionais necessárias para fazer a anamnese alimentar. Para isto, esta ferramenta foi escolhida. A tabela possui mais de 1000 alimentos cadastrados e informa detalhadamente a composição de cada alimento.
